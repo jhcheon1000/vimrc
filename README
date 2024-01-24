@@ -1,0 +1,4 @@
+1. Install neovim
+2. Install plug.vim
+3. copy colors directory to ~/.config/nvim/
+4. customizing~

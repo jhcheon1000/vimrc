@@ -4,7 +4,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 "Plugin 'scrooloose/nerdtree'
 "call vundle#end()
 
-call plug#begin('~/.vim/bundle')
+call plug#begin('~/.config/nvim/bundle')
 Plug 'VundleVim/Vundle.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'APZelos/blamer.nvim'
@@ -17,9 +17,9 @@ let g:NERDTreeDirArrowCollapsible = "\u25bc"
 let g:NERDTreeDirArrows = 1
 
 "blamer
-let g:blamer_enabled = 1
+"let g:blamer_enabled = 1
 let g:blamer_delay = 500
-let g:blamer_prefix = ' > '
+let g:blamer_prefix = '   '
 highlight Blamer guifg=brown
 
 set t_Co=256

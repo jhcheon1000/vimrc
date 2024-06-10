@@ -1,4 +1,7 @@
 1. Install neovim
 2. Install plug.vim
+Command : sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 3. copy colors directory to ~/.config/nvim/
+4. decompress bundle.zip to ~/.config/nvim
+4.1 if not work, decompress bundle.zip to ~/.vim too.
 4. customizing~

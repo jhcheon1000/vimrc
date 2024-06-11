@@ -8,6 +8,7 @@ call plug#begin('~/.config/nvim/bundle')
 Plug 'VundleVim/Vundle.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'APZelos/blamer.nvim'
+Plug 'wesleyche/srcexpl'
 call plug#end()
 "nerdtree
 let g:NERDTreeGlyphReadOnly = "RO"

@@ -9,6 +9,7 @@ Plug 'VundleVim/Vundle.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'APZelos/blamer.nvim'
 Plug 'wesleyche/srcexpl'
+Plug 'preservim/tagbar'
 call plug#end()
 "nerdtree
 let g:NERDTreeGlyphReadOnly = "RO"
@@ -102,17 +103,25 @@ nmap <C-\>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>	
 
 set csverb
-"-----------------------------------------------------"
+
+" Deprecated -- [[
+"----------------------------------------------------"
 " Tag List 真真
 "-----------------------------------------------------"
-filetype on
-nmap <F7> :TlistToggle<CR>
-let Tlist_Ctags_Cmd = "/usr/bin/ctags"
-let Tlist_Inc_Winwidth = 0
-let Tlist_Exit_OnlyWindow = 0
+"filetype on
+"nmap <F7> :TlistToggle<CR>
+"let Tlist_Ctags_Cmd = /usr/bin/ctags
+"let Tlist_Inc_Winwidth = 0
+"let Tlist_Exit_OnlyWindow = 0
+"
+"let Tlist_Auto_Open = 0
+"let Tlist_Use_Right_Window = 1
+"]]
 
-let Tlist_Auto_Open = 0
-let Tlist_Use_Right_Window = 1
+"-----------------------------------------------------"
+" Tagbar
+"-----------------------------------------------------"
+nmap <F7> :Tagbar<CR>-
 
 "-----------------------------------------------------"
 " Source Explorer 真真
